@@ -11,7 +11,7 @@ public class Main {
         Menu mainMenu = new Menu();
         int option = 1;
         mainMenu.show();
-        while (option != 4) {
+        while (option != 6) {
             String userInput = scanner.nextLine();
             option = Integer.parseInt(userInput);
             mainMenu.select(option);
