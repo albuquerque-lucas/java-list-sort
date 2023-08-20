@@ -5,6 +5,7 @@ import albuquerque.main.service.ProductService;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 
 public class Menu {
     private static final int ADD_PRODUCT = 1;
@@ -14,7 +15,7 @@ public class Menu {
     private static final int SORT_BY_PRICE = 5;
     private static final int EXIT_SYSTEM = 6;
     private static final ProductService productService = new ProductService();
-    private final ArrayList<Product> productList = new ArrayList<>();
+    private final List<Product> productList = new ArrayList<>();
 
     public Menu(){
         Product television = new Product("Televisao Sambuns 22 polegadas", 959.99);

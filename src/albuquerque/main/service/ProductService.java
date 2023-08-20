@@ -2,10 +2,7 @@ package albuquerque.main.service;
 
 import albuquerque.main.models.Product;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Scanner;
+import java.util.*;
 
 public class ProductService {
     public Product create() {
@@ -21,7 +18,7 @@ public class ProductService {
         return product;
     }
 
-    public void listAll(ArrayList<Product> productList)
+    public void listAll(List<Product> productList)
     {
         for( Product product : productList) {
             System.out.println("--------------------------");
@@ -32,7 +29,7 @@ public class ProductService {
         }
     }
 
-    public void sort(ArrayList<Product> productList, Comparator<Product> comparator) {
+    public void sort(List<Product> productList, Comparator<Product> comparator) {
         productList.sort(comparator);
     }
 
